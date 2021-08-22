@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="../index.html">inicio</a>
+        </li>
+    </ul>
+   <!--COMENTARIO-->
+
+   <div class="grid_container">
+
+    <header class="grid_header">
+            <h1>ESTUARS</h1>
+    </header>
+
+    
+
+    <main class="grid_main">
+            <form action="">
+
+                    <fieldset style="margin: 5px;">
+                            <legend style="font-weight: bold;text-align:center;">Datos Personales</legend>
+
+                            <div class="grid_datos">
+                                    <label for="idIdentifacion">Documento de Identificación</label>
+                                    <input type="number" name="txtIdentificacion" id="idIdentifacion"
+                                            required placeholder="ingrese solo números">
+
+                            </div>
+
+                            <div class="grid_datos">
+                                    <label for="idNombre">Nombre</label>
+                                    <input type="text" id="idNombre" 
+                                            name="txtNombre" required
+                                            placeholder="ingrese el nombre completo">
+                            </div>
+
+                            <div class="grid_datos">
+                                    <label for="idDireccion">Dirección</label>
+                                    <input type="text" name="txtDireccion" 
+                                            required id="idDireccion"
+                                            placeholder="solamente dirección del domicilio">
+                            </div>
+
+                            <div class="grid_datos">
+                                    <label for="idPais">País</label>
+                                    <select name="cmbPais" id="idPais" required>
+                                            <option value="Guatemala" selected>Guatemala</option>
+                                            <option value="Honduras" >Honduras</option>
+                                            <option value="Nicaragua">Nicaragua</option>
+                                            <option value="El Salvador"> El Salvador</option>
+                                            <option value="Costa Rica">Costa Rica</option>
+                                    </select>
+                            </div>
+
+                            <div class="grid_datos">
+                                    <label for="idEmail">E-Mail</label>
+                                    <input type="email" name="txtEmail" id="idEmail">
+                            </div>
+
+                            <div class="grid_datos">
+                                    <label for="idObservaciones">Observaciones</label>
+                                    <textarea name="txtObservaciones" id="idObservaciones" cols="30"
+                                            rows="10"></textarea>
+                            </div>
+
+                            <legend>Datos laborales</legend>
+
+                            <div class="grid_datos">
+                                <label for="idEmpresa">Empresa</label>
+                                <input type="text" id="idEmpresa" 
+                                        name="txtEmpresa" required
+                                        placeholder="ingrese el nombre de la Empresa">
+                            </div>
+
+                            
+                            <div class="grid_datos">
+                                <label for="idSueldo">Sueldo Ordinario</label>
+                                <input type="number" name="txtsueldo" id="idSueldo"
+                                        required placeholder="ingrese solo números">
+
+                             </div>
+
+                             <div class="grid_datos">
+                                <label for="idBoni">Bonificacion</label>
+                                <input type="number" name="txtboni" id="idBoni"
+                                        required placeholder="ingrese solo números">
+
+                             </div>   
+
+                             <div class="grid_datos">
+                                <label for="idOtra">Otras Bonificaciones</label>
+                                <input type="number" name="txtOtras" id="idOtras"
+                                        required placeholder="ingrese solo números">
+
+                             </div> 
+
+                             <div class="grid_datos">
+                                <button type="submit" style="grid-column: 2;">Enviar Datos</button>
+                        </div>
+
+
+                            
+
+
+
+                    </fieldset>
+
+            </form>
+    </main>
+
+    
+
+    <footer class="grid_footer">
+            <h4>carretera</h4>
+    </footer>
+
+</div>
+</body>
+</html>
